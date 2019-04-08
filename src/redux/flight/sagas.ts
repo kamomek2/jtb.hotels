@@ -1,7 +1,9 @@
 import { call, put, takeEvery, takeLatest } from 'redux-saga/effects';
 import { delay } from 'redux-saga';
 import { FLIGHT_ACTIONS } from "./constants";
-
+import { SEARCH_ACTIONS, searchDispatchSearchQuery } from 'jtb.search';
+import { fakeFetchFlights } from "../../utils/fakeApi";
+import { flightSetList, flightSetLoading } from "./actions";
 // Worker Saga for SET_EDITOR_LOCATION_INPUT reducer
 /*
 function* fetchSuggestions({ payload }) {
@@ -17,8 +19,22 @@ function* fetchSuggestions({ payload }) {
 }
 */
 
+function* performSearchSaga(
+  { query, arrival_date, departure_date }:
+  ReturnType<typeof searchDispatchSearchQuery>
+) {
+  console.log('starting flights fetch');
+  yield put(flightSetLoading(true));
+  const list = yield call(fakeFetchFlights, { query, arrival_date, departure_date });
+
+  console.log('list is', list);
+
+  yield put(flightSetList(list));
+  yield put(flightSetLoading(false));
+}
+
 function* mySaga() {
-  // fetch autocompletion on location input
+  yield takeLatest(SEARCH_ACTIONS.DISPATCH_SEARCH_QUERY, performSearchSaga)
   //yield takeLatest(TYPES.ACTION, function);
 }
 
