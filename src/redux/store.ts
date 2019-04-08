@@ -2,15 +2,15 @@ import { createStore, applyMiddleware, combineReducers, compose, Store } from 'r
 
 import { persistStore, persistReducer } from 'redux-persist';
 import createSagaMiddleware from 'redux-saga';
-import { connectRouter } from 'connected-react-router'
+import { connectRouter, RouterState } from 'connected-react-router'
 import { createBrowserHistory } from 'history';
 import { Persistor } from "redux-persist/es/types";
 import { routerMiddleware } from 'connected-react-router'
 
-import flightReducer, { flightPersistConfig } from './flight/reducer';
+import flightReducer, { flightPersistConfig, IFlightState } from './flight/reducer';
 import flightSaga from './flight/sagas';
 
-import { searchReducer, searchSaga, searchPersistConfig } from 'jtb.search';
+import { searchReducer, searchSaga, searchPersistConfig, ISearchState } from 'jtb.search';
 
 export const sagaMiddleware = createSagaMiddleware();
 export const history = createBrowserHistory();
@@ -40,4 +40,10 @@ export function configureStore(): { store: Store<any>, persistor: Persistor } {
   const persistor = persistStore(store);
 
   return { store, persistor };
+}
+
+export interface IStore {
+  search: ISearchState,
+  flight: IFlightState,
+  router: RouterState,
 }

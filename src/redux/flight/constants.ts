@@ -1,3 +1,3 @@
-export const USER_ACTIONS = {
+export const FLIGHT_ACTIONS = {
   SOME_ACTION: 'SOME_ACTION',
 };

@@ -1,27 +1,27 @@
 import { createReducer } from 'reduxsauce';
 import * as ACTIONS from "./actions";
-import { USER_ACTIONS } from "./constants";
+import { FLIGHT_ACTIONS } from "./constants";
 import storage from "redux-persist/lib/storage";
 import { PersistConfig } from "redux-persist/es/types";
 
-export type IRootState = Readonly<{
+export type IFlightState = Readonly<{
   // key: string
 }>;
 
 type UnsafeReturnType<T> = T extends (...args: any[]) => infer R ? R : any;
 interface ActionHandler<T> {
-  (state: IRootState, payload: UnsafeReturnType<T>): IRootState;
+  (state: IFlightState, payload: UnsafeReturnType<T>): IFlightState;
 }
-
-const someActionHandler: ActionHandler<typeof ACTIONS.someAction> = (state) => {
-  return { ...state };
-};
+//
+// const someActionHandler: ActionHandler<typeof ACTIONS.someAction> = (state) => {
+//   return { ...state };
+// };
 
 const HANDLERS = {
-  [USER_ACTIONS.SOME_ACTION]: someActionHandler,
+  // [FLIGHT_ACTIONS.SOME_ACTION]: someActionHandler,
 };
 
-const INITIAL_STATE: IRootState = {
+const INITIAL_STATE: IFlightState = {
   // key: val,
   // key: val,
   // key: val
