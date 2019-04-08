@@ -25,14 +25,14 @@ const devtool = isDevelopment ? 'cheap-module-eval-source-map' : 'source-map';
 const resolve = {
   alias: {
     'react-dom': '@hot-loader/react-dom',
-    $components: join(__dirname, 'src/components'),
-    $containers: join(__dirname, 'src/containers'),
-    $constants: join(__dirname, 'src/constants'),
-    $sprites: join(__dirname, 'src/sprites'),
-    $config: join(__dirname, './config'),
-    $styles: join(__dirname, 'src/styles'),
-    $redux: join(__dirname, 'src/redux'),
-    $utils: join(__dirname, 'src/utils'),
+    // $components: join(__dirname, 'src/components'),
+    // $containers: join(__dirname, 'src/containers'),
+    // $constants: join(__dirname, 'src/constants'),
+    // $sprites: join(__dirname, 'src/sprites'),
+    // $config: join(__dirname, './config'),
+    // $styles: join(__dirname, 'src/styles'),
+    // $redux: join(__dirname, 'src/redux'),
+    // $utils: join(__dirname, 'src/utils'),
   },
   extensions: ['*', '.ts', '.tsx', '.js', '.jsx', '.json']
 };
@@ -92,7 +92,10 @@ module.exports = () => {
             {
               loader: 'sass-resources-loader',
               options: {
-                resources: ['src/styles/variables.scss'],
+                resources: [
+                  'node_modules/jtb.search/src/styles/variables.scss',
+                  'src/styles/variables.scss',
+                ],
               },
             },
           ]
@@ -128,7 +131,7 @@ module.exports = () => {
     resolve,
     plugins,
     entry: {
-      app: './src/index.tsx',
+      app: './src/app.tsx',
     },
     output: {
       publicPath: '/',
@@ -165,7 +168,7 @@ module.exports = () => {
     },
     devServer: {
       historyApiFallback: true,
-      port: 8000,
+      port: 8001,
       // host: '192.168.88.40',
       contentBase: 'dist',
       publicPath: '/',

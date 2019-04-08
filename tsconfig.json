@@ -11,14 +11,6 @@
     "lib": [ "es2015", "DOM", "es6" ],
     "baseUrl": ".",
     "paths": {
-      "$components/*": [ "src/components/*" ],
-      "$containers/*": [ "src/containers/*" ],
-      "$constants/*": [ "src/constants/*" ],
-      "$sprites/*": [ "src/sprites/*" ],
-      "$config/*": [ "./config/*" ],
-      "$styles/*": [ "src/styles/*" ],
-      "$redux/*": [ "src/redux/*" ],
-      "$utils/*": [ "src/utils/*" ],
     }
   },
   "include": [

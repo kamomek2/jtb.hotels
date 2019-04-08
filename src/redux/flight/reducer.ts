@@ -1,6 +1,8 @@
 import { createReducer } from 'reduxsauce';
-import * as ACTIONS from "$redux/user/actions";
-import { USER_ACTIONS } from "$redux/user/constants";
+import * as ACTIONS from "./actions";
+import { USER_ACTIONS } from "./constants";
+import storage from "redux-persist/lib/storage";
+import { PersistConfig } from "redux-persist/es/types";
 
 export type IRootState = Readonly<{
   // key: string
@@ -26,3 +28,8 @@ const INITIAL_STATE: IRootState = {
 };
 
 export default createReducer(INITIAL_STATE, HANDLERS);
+export const flightPersistConfig: PersistConfig = {
+  key: 'user',
+  whitelist: [],
+  storage,
+};
