@@ -11,10 +11,17 @@
     "lib": [ "es2015", "DOM", "es6" ],
     "baseUrl": ".",
     "paths": {
-    }
+    },
+    "typeRoots": [
+      "index.d.ts",
+      "node_modules/@types"
+    ]
   },
   "include": [
     "./src/**/*",
     "./custom.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

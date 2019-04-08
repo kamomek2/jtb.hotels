@@ -4,8 +4,10 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
+    "build": "rm -rf ./dist && tsc --project tsconfig.json && npm run copy-css && git add .",
+    "copy-css": "copyfiles -u 1 \"./src/**/**/**/**/*.scss\" ./dist",
+    "prepare": "npm run build",
     "start": "NODE_ENV=development webpack-dev-server --mode development --hot --open --inline --progress",
-    "build": "NODE_ENV=production webpack --env production --config=webpack.config.js --progress -p",
     "profile": "webpack --json > stats.json"
   },
   "author": "Fedor Katurov <gotham48@gmail.com>",
