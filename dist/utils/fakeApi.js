@@ -5,5 +5,5 @@ exports.FAKE_HOTEL_LIST = [
     { title: 'Second hotel from fake api' },
     { title: 'Third hotel from fake api' },
 ];
-exports.fakeFetchHotels = ({ query, arrival_date, departure_date }) => (new Promise(resolve => setTimeout(() => resolve(exports.FAKE_HOTEL_LIST), 1000)));
+exports.fakeFetchHotels = ({ query, arrival_date, departure_date }) => (new Promise(resolve => setTimeout(() => resolve(exports.FAKE_HOTEL_LIST), 1500)));
 //# sourceMappingURL=fakeApi.js.map
