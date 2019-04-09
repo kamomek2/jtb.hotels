@@ -29,7 +29,7 @@ export const HotelList: React.FunctionComponent<IHotelListProps> = ({
       }
 
       {
-        !is_loading && list &&
+        !is_loading && list && list.length > 0 &&
         <div className={style.list}>
           {
             list.map(({ title }) => (
