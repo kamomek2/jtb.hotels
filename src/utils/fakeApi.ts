@@ -1,12 +1,12 @@
-import { IFlightItem } from "../redux/flight/reducer";
+import { IHotelItem } from "../redux/hotel/reducer";
 import { searchDispatchQueryAction } from "..";
 
-export const FAKE_FLIGHT_LIST: IFlightItem[] = [
-  { title: 'First flight from fake api'},
-  { title: 'Second flight from fake api'},
-  { title: 'Third flight from fake api'},
+export const FAKE_HOTEL_LIST: IHotelItem[] = [
+  { title: 'First hotel from fake api'},
+  { title: 'Second hotel from fake api'},
+  { title: 'Third hotel from fake api'},
 ];
 
-export const fakeFetchFlights = ({ query, arrival_date, departure_date }: searchDispatchQueryAction) => (
-  new Promise(resolve => setTimeout(() => resolve(FAKE_FLIGHT_LIST), 1000))
+export const fakeFetchHotels = ({ query, arrival_date, departure_date }: searchDispatchQueryAction) => (
+  new Promise(resolve => setTimeout(() => resolve(FAKE_HOTEL_LIST), 1000))
 );

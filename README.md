@@ -1,4 +1,4 @@
-## JTB Flights Component
+## JTB Hotels Component
 
 Will dispatch the search and handle routing.
 
@@ -6,8 +6,8 @@ Will dispatch the search and handle routing.
 Clone and install:
 
 ```
-git clone https://github.com/muerwre/jtb.flights.git
-cd jtb.flights.git
+git clone https://github.com/muerwre/jtb.hotels.git
+cd jtb.hotels.git
 npm i
 ```
 
@@ -17,7 +17,7 @@ npm start
 ```
 
 This component can be launched as standalone app, see it in action by navigating to 
-```http://localhost:8001/```.
+```http://localhost:8002/```.
 
 ### How it works
 When you click 'Search', the jtb.component dispatches DISPATCH_SEARCH_QUERY along the combined redux store. The components,

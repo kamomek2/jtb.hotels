@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { hot } from 'react-hot-loader';
 import { NavLink, Switch, Route } from 'react-router-dom';
 import { SearchScreen } from 'jtb.search';
-import FlightList from "./FlightList";
+import FlightList from "./HotelList";
 
 interface IAppProps {}
 interface IAppState {}

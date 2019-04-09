@@ -3,13 +3,12 @@ const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const { join } = require('path');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const htmlPlugin = new HtmlWebPackPlugin({
   template: './src/index.html',
   filename: './index.html',
-  title: 'Empty React Project',
+  title: 'JTB Hotels Demo',
   hash: false,
   // favicon: 'src/sprites/favicon.png',
 });
@@ -168,7 +167,7 @@ module.exports = () => {
     },
     devServer: {
       historyApiFallback: true,
-      port: 8001,
+      port: 8002,
       // host: '192.168.88.40',
       contentBase: 'dist',
       publicPath: '/',

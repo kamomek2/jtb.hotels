@@ -7,8 +7,8 @@ import { createBrowserHistory } from 'history';
 import { Persistor } from "redux-persist/es/types";
 import { routerMiddleware } from 'connected-react-router'
 
-import flightReducer, { flightPersistConfig, IFlightState } from './flight/reducer';
-import flightSaga from './flight/sagas';
+import hotelReducer, { hotelPersistConfig, IHotelState } from './hotel/reducer';
+import hotelSaga from './hotel/sagas';
 
 import { searchReducer, searchSaga, searchPersistConfig, ISearchState } from 'jtb.search';
 
@@ -23,7 +23,8 @@ const composeEnhancers =
 
 export const store = createStore(
   combineReducers({
-    flight: persistReducer(flightPersistConfig, flightReducer),
+    // flight: persistReducer(flightPersistConfig, flightReducer),
+    hotel: persistReducer(hotelPersistConfig, hotelReducer),
     search: persistReducer(searchPersistConfig, searchReducer),
     router: connectRouter(history),
   }),
@@ -34,7 +35,7 @@ export const store = createStore(
 );
 
 export function configureStore(): { store: Store<any>, persistor: Persistor } {
-  sagaMiddleware.run(flightSaga);
+  sagaMiddleware.run(hotelSaga);
   sagaMiddleware.run(searchSaga);
 
   const persistor = persistStore(store);
@@ -44,6 +45,6 @@ export function configureStore(): { store: Store<any>, persistor: Persistor } {
 
 export interface IStore {
   search: ISearchState,
-  flight: IFlightState,
+  hotel: IHotelState,
   router: RouterState,
 }

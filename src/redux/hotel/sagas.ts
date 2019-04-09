@@ -1,17 +1,17 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
-import { fakeFetchFlights } from "../../utils/fakeApi";
-import { flightSetList, flightSetLoading, searchDispatchQueryAction } from "./actions";
+import { fakeFetchHotels } from "../../utils/fakeApi";
+import { hotelSetList, hotelSetLoading, searchDispatchQueryAction } from "./actions";
 import { GLOBAL_ACTIONS } from "./constants";
 import { SagaIterator } from "redux-saga";
 
 function* performSearchSaga(
   { query, arrival_date, departure_date }: searchDispatchQueryAction
 ): SagaIterator {
-  yield put(flightSetLoading(true));
-  const list = yield call(fakeFetchFlights, { query, arrival_date, departure_date });
+  yield put(hotelSetLoading(true));
+  const list = yield call(fakeFetchHotels, { query, arrival_date, departure_date });
 
-  yield put(flightSetList(list));
-  yield put(flightSetLoading(false));
+  yield put(hotelSetList(list));
+  yield put(hotelSetLoading(false));
 }
 
 function* mySaga() {

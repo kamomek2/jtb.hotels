@@ -1,4 +1,4 @@
-export const FLIGHT_ACTIONS = {
+export const HOTEL_ACTIONS = {
   SET_LOADING: 'FLIGHT/SET_LOADING',
   SET_LIST: 'FLIGHT/SET_LIST',
 };
