@@ -8,12 +8,12 @@ Clone and install:
 ```
 git clone https://github.com/muerwre/jtb.hotels.git
 cd jtb.hotels
-npm i
+yarn
 ```
 
 Run it:
 ```
-npm start
+yarn start
 ```
 
 This component can be launched as standalone app, see it in action by navigating to 
