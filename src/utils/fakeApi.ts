@@ -8,5 +8,5 @@ export const FAKE_HOTEL_LIST: IHotelItem[] = [
 ];
 
 export const fakeFetchHotels = ({ query, arrival_date, departure_date }: searchDispatchQueryAction) => (
-  new Promise(resolve => setTimeout(() => resolve(FAKE_HOTEL_LIST), 1000))
+  new Promise(resolve => setTimeout(() => resolve(FAKE_HOTEL_LIST), 1500))
 );
