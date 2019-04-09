@@ -4763,9 +4763,9 @@ jsx-ast-utils@^2.0.1:
   dependencies:
     array-includes "^3.0.3"
 
-jtb.flights@muerwre/jtb.flights:
-  version "0.0.1"
-  resolved "https://codeload.github.com/muerwre/jtb.flights/tar.gz/61e158124283a7fa6236153aa630cca6ba0efc05"
+jtb.flights@jtb.flights@latest:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/jtb.flights/-/jtb.flights-0.0.2.tgz#7c4deddd5365741302e53b9b1213b17907cc9d21"
   dependencies:
     "@hot-loader/react-dom" "^16.8.1"
     "@types/classnames" "^2.2.7"
@@ -4798,12 +4798,11 @@ jtb.flights@muerwre/jtb.flights:
     scrypt "^6.0.3"
     throttle-debounce "^2.1.0"
 
-jtb.search@muerwre/jtb.search:
-  version "0.0.4"
-  resolved "https://codeload.github.com/muerwre/jtb.search/tar.gz/485baf12c45489bd9c398939736c517a5cb033d1"
+jtb.hotels@jtb.hotels@latest:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/jtb.hotels/-/jtb.hotels-0.0.2.tgz#a16c4c34f6121553a85b1b5223af8ca1e25a68af"
   dependencies:
     "@hot-loader/react-dom" "^16.8.1"
-    "@momothepug/tsmodule-alias" "^1.0.0"
     "@types/classnames" "^2.2.7"
     "@types/node" "^11.9.0"
     "@types/react" "16.8.1"
@@ -4812,9 +4811,47 @@ jtb.search@muerwre/jtb.search:
     classnames "^2.2.6"
     clean-webpack-plugin "^0.1.9"
     connected-react-router "^6.3.2"
+    history "^4.7.2"
+    http-errors "~1.6.2"
+    less "^3.8.1"
+    less-middleware "~2.2.1"
+    lodash "^4.17.10"
+    node-sass "^4.11.0"
+    react "16.8.1"
+    react-dom "16.8.1"
+    react-hot-loader "^4.1.1"
+    react-redux "^6.0.1"
+    react-router "^4.3.1"
+    react-router-dom "^4.3.1"
+    react-scrollbar "^0.5.4"
+    redux "^4.0.1"
+    redux-persist "^5.10.0"
+    redux-saga "^0.16.2"
+    reduxsauce "^1.0.0"
+    sass-loader "^7.1.0"
+    sass-resources-loader "^2.0.0"
+    scrypt "^6.0.3"
+    throttle-debounce "^2.1.0"
+
+jtb.search@jtb.search^0.0.1:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/jtb.search/-/jtb.search-0.0.2.tgz#7d8395b4464709953ab92ce11b2e9a5ee0f7e80d"
+  dependencies:
+    "@hot-loader/react-dom" "^16.8.1"
+    "@types/classnames" "^2.2.7"
+    "@types/node" "^11.9.0"
+    "@types/react" "16.8.1"
+    axios "^0.18.0"
+    babel-runtime "^6.26.0"
+    classnames "^2.2.6"
+    clean-webpack-plugin "^0.1.9"
+    connected-react-router "^6.3.2"
+    copyfiles "^2.1.0"
     date-fns "^2.0.0-alpha.27"
     history "^4.7.2"
     http-errors "~1.6.2"
+    jtb.flights jtb.flights@latest
+    jtb.hotels jtb.hotels@latest
     less "^3.8.1"
     less-middleware "~2.2.1"
     lodash "^4.17.10"
