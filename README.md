@@ -7,7 +7,7 @@ Clone and install:
 
 ```
 git clone https://github.com/muerwre/jtb.hotels.git
-cd jtb.hotels.git
+cd jtb.hotels
 npm i
 ```
 
