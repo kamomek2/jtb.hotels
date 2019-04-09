@@ -18,8 +18,12 @@ export const FlightList: React.FunctionComponent<IFlightListProps> = ({
   <div className={style.wrapper}>
     <div className={style.container}>
       <div className={style.badge}>This part is rendered by <u>jtb.flights</u> package</div>
-      <div>Also, it includes some style variables like paddings and border radius from jtb.search</div>
-      <div>Search query from jtb.search component is: {query || `- empty -`}</div>
+      <div className={style.badge}>Search query from jtb.search component is: {query || `- empty -`}</div>
+      <div>Also, it includes some style variables like paddings and border radius from jtb.search <u>variables.scss</u></div>
+      <div>It calls its own async action when you press 'Search' and also has access to the search part of the data storage.</div>
+      <div>You can clone it and run as standalone app with search box for development purposes, but search form is listed as dev-dependencies and
+      will not be installed when you use jtb.flights as dependency on other projects.</div>
+
       <div>
         {
           is_loading && <FlightListLoading />
