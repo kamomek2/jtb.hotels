@@ -24,7 +24,7 @@ exports.HotelList = ({ query, is_loading, list, }) => (React.createElement("div"
             React.createElement("u", null, "1500ms"),
             " delay"),
         is_loading && React.createElement(HotelListLoading_1.HotelListLoading, null),
-        !is_loading && list &&
+        !is_loading && list && list.length > 0 &&
             React.createElement("div", { className: style.list }, list.map(({ title }) => (React.createElement(HotelListItem_1.HotelListItem, { title: title, key: title })))))));
 const mapStateToProps = ({ hotel, search: { query } }) => (Object.assign({}, hotel, { query }));
 exports.default = react_redux_1.connect(mapStateToProps)(exports.HotelList);
