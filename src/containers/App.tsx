@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { hot } from 'react-hot-loader';
 import { NavLink, Switch, Route } from 'react-router-dom';
 import { SearchScreen } from 'jtb.search';
-import FlightList from "./HotelList";
+import HotelList from "./HotelList";
 
 interface IAppProps {}
 interface IAppState {}
@@ -14,7 +14,7 @@ class Component extends React.Component<IAppProps, IAppState> {
     return (
       <div>
         <SearchScreen />
-        <FlightList />
+        <HotelList />
       </div>
     );
   }
