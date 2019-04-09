@@ -2,14 +2,13 @@ import * as React from 'react';
 import { IStore } from "../../redux/store";
 import { connect } from 'react-redux';
 import { IFlightState } from "../../redux/flight/reducer";
-import { ISearchState } from 'jtb.search';
 import { FlightListLoading } from "../../components/FlightListLoading";
 import { FlightListItem } from "../../components/FlightListItem";
 
 const style = require('./style.scss');
 
 export interface IFlightListProps extends IFlightState{
-  query: ISearchState['query'],
+  query: string,
 }
 
 export const FlightList: React.FunctionComponent<IFlightListProps> = ({
