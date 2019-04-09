@@ -28,17 +28,19 @@ export const HotelList: React.FunctionComponent<IHotelListProps> = ({
         is_loading && <HotelListLoading />
       }
 
-      <div className={style.list}>
-        {
-          !is_loading &&
-          list.map(({ title }) => (
-            <HotelListItem
-              title={title}
-              key={title}
-            />
-          ))
-        }
-      </div>
+      {
+        !is_loading && list &&
+        <div className={style.list}>
+          {
+            list.map(({ title }) => (
+              <HotelListItem
+                title={title}
+                key={title}
+              />
+            ))
+          }
+        </div>
+      }
     </div>
   </div>
 );
