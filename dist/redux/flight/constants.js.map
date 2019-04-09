@@ -1,1 +1,1 @@
-{"version":3,"file":"constants.js","sourceRoot":"","sources":["../../../src/redux/flight/constants.ts"],"names":[],"mappings":";;AAAa,QAAA,cAAc,GAAG;IAC5B,WAAW,EAAE,oBAAoB;IACjC,QAAQ,EAAE,iBAAiB;CAC5B,CAAC"}
+{"version":3,"file":"constants.js","sourceRoot":"","sources":["../../../src/redux/flight/constants.ts"],"names":[],"mappings":";;AAAa,QAAA,cAAc,GAAG;IAC5B,WAAW,EAAE,oBAAoB;IACjC,QAAQ,EAAE,iBAAiB;CAC5B,CAAC;AAEW,QAAA,cAAc,GAAG;IAC5B,4BAA4B,EAAE,8BAA8B;CAC7D,CAAC"}

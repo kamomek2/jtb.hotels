@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { IStore } from "../../redux/store";
 import { connect } from 'react-redux';
 import { IFlightState } from "../../redux/flight/reducer";
 import { FlightListLoading } from "../../components/FlightListLoading";
@@ -39,7 +38,7 @@ export const FlightList: React.FunctionComponent<IFlightListProps> = ({
   </div>
 );
 
-const mapStateToProps = ({ flight, search: { query } }: IStore) => ({
+const mapStateToProps = ({ flight, search: { query } }) => ({
   ...flight,
   query,
 });
