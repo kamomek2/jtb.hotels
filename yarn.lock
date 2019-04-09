@@ -4826,7 +4826,7 @@ jsx-ast-utils@^2.0.1:
 
 jtb.flights@muerwre/jtb.flights:
   version "0.0.4"
-  resolved "https://codeload.github.com/muerwre/jtb.flights/tar.gz/75915f1ae8abf4c3aebf5b1dd46add73e36b7905"
+  resolved "https://codeload.github.com/muerwre/jtb.flights/tar.gz/0c3ecf9e05aebf669889c3ad8784d3e9329950ee"
   dependencies:
     "@hot-loader/react-dom" "^16.8.1"
     "@types/classnames" "^2.2.7"
