@@ -12,5 +12,6 @@ declare class HotelList extends React.PureComponent<{}, {}> {}
 declare const hotelSetLoading: typeof hotelActions.hotelSetLoading;
 declare const hotelSetList: typeof hotelActions.hotelSetList;
 
-declare module 'jtb.hotels' {}
+declare interface IHotelState {}
 
+declare module 'jtb.hotels' {}

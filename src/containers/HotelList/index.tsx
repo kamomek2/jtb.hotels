@@ -24,10 +24,11 @@ export const HotelList: React.FunctionComponent<IHotelListProps> = ({
       <div>You can clone it and run as standalone app with search box for development purposes, but search form is listed as dev-dependencies and
       will not be installed when you use jtb.hotels as dependency on other projects.</div>
 
-      <div>
-        {
-          is_loading && <HotelListLoading />
-        }
+      {
+        is_loading && <HotelListLoading />
+      }
+
+      <div className={style.list}>
         {
           !is_loading &&
           list.map(({ title }) => (

@@ -4765,7 +4765,7 @@ jsx-ast-utils@^2.0.1:
 
 jtb.flights@muerwre/jtb.flights:
   version "0.0.1"
-  resolved "https://codeload.github.com/muerwre/jtb.flights/tar.gz/031a646a0740899cb3af7d22f011ec79d95db7f4"
+  resolved "https://codeload.github.com/muerwre/jtb.flights/tar.gz/61e158124283a7fa6236153aa630cca6ba0efc05"
   dependencies:
     "@hot-loader/react-dom" "^16.8.1"
     "@types/classnames" "^2.2.7"
@@ -4800,9 +4800,10 @@ jtb.flights@muerwre/jtb.flights:
 
 jtb.search@muerwre/jtb.search:
   version "0.0.4"
-  resolved "https://codeload.github.com/muerwre/jtb.search/tar.gz/2ecd5a6ff2c1cd07451733b26abc06128d47f282"
+  resolved "https://codeload.github.com/muerwre/jtb.search/tar.gz/485baf12c45489bd9c398939736c517a5cb033d1"
   dependencies:
     "@hot-loader/react-dom" "^16.8.1"
+    "@momothepug/tsmodule-alias" "^1.0.0"
     "@types/classnames" "^2.2.7"
     "@types/node" "^11.9.0"
     "@types/react" "16.8.1"
@@ -4811,11 +4812,9 @@ jtb.search@muerwre/jtb.search:
     classnames "^2.2.6"
     clean-webpack-plugin "^0.1.9"
     connected-react-router "^6.3.2"
-    copyfiles "^2.1.0"
     date-fns "^2.0.0-alpha.27"
     history "^4.7.2"
     http-errors "~1.6.2"
-    jtb.flights muerwre/jtb.flights
     less "^3.8.1"
     less-middleware "~2.2.1"
     lodash "^4.17.10"

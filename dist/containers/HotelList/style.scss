@@ -24,10 +24,3 @@
     margin-right: 16px;
   }
 }
-
-.list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 160px;
-  grid-column-gap: ($gap / 2);
-}
