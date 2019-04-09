@@ -4826,7 +4826,7 @@ jsx-ast-utils@^2.0.1:
 
 jtb.flights@muerwre/jtb.flights:
   version "0.0.4"
-  resolved "https://codeload.github.com/muerwre/jtb.flights/tar.gz/155641f4afd2dcbca20d72f4a37276b88bbae90b"
+  resolved "https://codeload.github.com/muerwre/jtb.flights/tar.gz/75915f1ae8abf4c3aebf5b1dd46add73e36b7905"
   dependencies:
     "@hot-loader/react-dom" "^16.8.1"
     "@types/classnames" "^2.2.7"
@@ -4896,7 +4896,7 @@ jtb.hotels@muerwre/jtb.hotels:
 
 jtb.search@muerwre/jtb.search:
   version "0.0.2"
-  resolved "https://codeload.github.com/muerwre/jtb.search/tar.gz/ef0e3df87d4b78d72907bd13603d42e46a09ee3b"
+  resolved "https://codeload.github.com/muerwre/jtb.search/tar.gz/e0295c67c8020de8c14213919bb7a469c7fc1eb7"
   dependencies:
     "@hot-loader/react-dom" "^16.8.1"
     "@types/classnames" "^2.2.7"
@@ -4907,7 +4907,6 @@ jtb.search@muerwre/jtb.search:
     classnames "^2.2.6"
     clean-webpack-plugin "^0.1.9"
     connected-react-router "^6.3.2"
-    copyfiles "^2.1.0"
     date-fns "^2.0.0-alpha.27"
     history "^4.7.2"
     http-errors "~1.6.2"
