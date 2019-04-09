@@ -1,7 +1,7 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
-import { fakeFetchHotels } from "../../utils/fakeApi";
-import { hotelSetList, hotelSetLoading, searchDispatchQueryAction } from "./actions";
-import { GLOBAL_ACTIONS } from "./constants";
+import { fakeFetchHotels } from '$utils/fakeApi';
+import { hotelSetList, hotelSetLoading, searchDispatchQueryAction } from '$redux/hotel/actions';
+import { GLOBAL_ACTIONS } from "$redux/hotel/constants";
 import { SagaIterator } from "redux-saga";
 
 function* performSearchSaga(

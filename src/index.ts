@@ -3,4 +3,4 @@ export { default as hotelSaga } from './redux/hotel/sagas';
 export { HOTEL_ACTIONS } from "./redux/hotel/constants";
 export * from './redux/hotel/actions';
 export { default as HotelList } from './containers/HotelList';
-export { IHotelState } from './redux/hotel/reducer';
+export { IHotelState, IHotelItem } from './redux/hotel/reducer';

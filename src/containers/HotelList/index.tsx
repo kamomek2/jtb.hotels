@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { IHotelState } from "../../redux/hotel/reducer";
-import { HotelListLoading } from "../../components/HotelListLoading";
-import { HotelListItem } from "../../components/HotelListItem";
+import { IHotelState } from "$redux/hotel/reducer";
+import { HotelListLoading } from "$components/HotelListLoading";
+import { HotelListItem } from "$components/HotelListItem";
 
 const style = require('./style.scss');
 

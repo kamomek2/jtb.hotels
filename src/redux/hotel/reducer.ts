@@ -1,6 +1,6 @@
 import { createReducer } from 'reduxsauce';
-import * as ACTIONS from "./actions";
-import { HOTEL_ACTIONS } from "./constants";
+import * as ACTIONS from "$redux/hotel/actions";
+import { HOTEL_ACTIONS } from "$redux/hotel/constants";
 import storage from "redux-persist/lib/storage";
 import { PersistConfig } from "redux-persist/es/types";
 

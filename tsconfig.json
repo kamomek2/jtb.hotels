@@ -9,8 +9,16 @@
     "target": "es6",
     "jsx": "react",
     "lib": [ "es2015", "DOM", "es6" ],
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
+      "$components/*": ["src/components/*"],
+      "$containers/*": ["src/containers/*"],
+      "$constants/*": ["src/constants/*"],
+      "$sprites/*": ["src/sprites/*"],
+      "$config/*": ["./config/*"],
+      "$styles/*": ["src/styles/*"],
+      "$redux/*": ["src/redux/*"],
+      "$utils/*": ["src/utils/*"]
     },
     "typeRoots": [
       "index.d.ts",

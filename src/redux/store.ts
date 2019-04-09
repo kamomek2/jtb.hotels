@@ -7,8 +7,8 @@ import { createBrowserHistory } from 'history';
 import { Persistor } from "redux-persist/es/types";
 import { routerMiddleware } from 'connected-react-router'
 
-import hotelReducer, { hotelPersistConfig, IHotelState } from './hotel/reducer';
-import hotelSaga from './hotel/sagas';
+import hotelReducer, { hotelPersistConfig, IHotelState } from '$redux/hotel/reducer';
+import hotelSaga from '$redux/hotel/sagas';
 
 import { searchReducer, searchSaga, searchPersistConfig, ISearchState } from 'jtb.search';
 import { flightReducer, flightSaga, flightPersistConfig, IFlightState } from 'jtb.flights';

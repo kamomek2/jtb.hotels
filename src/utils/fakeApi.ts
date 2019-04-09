@@ -1,4 +1,4 @@
-import { IHotelItem } from "../redux/hotel/reducer";
+import { IHotelItem } from "$redux/hotel/reducer";
 import { searchDispatchQueryAction } from "..";
 
 export const FAKE_HOTEL_LIST: IHotelItem[] = [
