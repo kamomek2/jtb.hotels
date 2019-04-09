@@ -20,4 +20,4 @@ This component can be launched as standalone app, see it in action by navigating
 ```http://localhost:8002/```.
 
 ### How it works
-See ```https://github.com/muerwre/jtb.search```'s readme
+See https://github.com/muerwre/jtb.search readme
