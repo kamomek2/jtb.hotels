@@ -10,7 +10,7 @@ export interface IHotelListProps extends IHotelState {
   query: string,
 }
 
-const HotelList: React.FunctionComponent<IHotelListProps> = ({
+export const HotelList: React.FunctionComponent<IHotelListProps> = ({
   query,
   is_loading,
   list,

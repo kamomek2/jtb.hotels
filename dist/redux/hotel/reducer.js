@@ -9,11 +9,11 @@ const HANDLERS = {
     [constants_1.HOTEL_ACTIONS.SET_LOADING]: setLoading,
     [constants_1.HOTEL_ACTIONS.SET_LIST]: setList,
 };
-const INITIAL_STATE = {
+exports.INITIAL_STATE = {
     is_loading: false,
     list: [],
 };
-exports.default = reduxsauce_1.createReducer(INITIAL_STATE, HANDLERS);
+exports.default = reduxsauce_1.createReducer(exports.INITIAL_STATE, HANDLERS);
 exports.hotelPersistConfig = {
     key: 'hotel',
     whitelist: [],

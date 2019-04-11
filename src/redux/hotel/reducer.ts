@@ -25,7 +25,7 @@ const HANDLERS = {
   [HOTEL_ACTIONS.SET_LIST]: setList,
 };
 
-const INITIAL_STATE: IHotelState = {
+export const INITIAL_STATE: IHotelState = {
   is_loading: false,
   list: [],
 };
