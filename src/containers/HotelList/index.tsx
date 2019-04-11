@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { IHotelState } from "$index";
+import { IHotelState } from "$types";
 import { HotelListLoading } from "$components/HotelListLoading";
 import { HotelListItem } from "$components/HotelListItem";
 

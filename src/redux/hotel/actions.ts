@@ -1,5 +1,5 @@
 import { HOTEL_ACTIONS } from "$redux/hotel/constants";
-import { IHotelState } from "$index";
+import { IHotelState } from "$types";
 
 export const hotelSetLoading = (is_loading: IHotelState['is_loading']) => ({
   type: HOTEL_ACTIONS.SET_LOADING, is_loading,

@@ -1,4 +1,4 @@
-import { IHotelItem } from "$index";
+import { IHotelItem } from "$types";
 import { searchDispatchQueryAction } from "..";
 
 export const FAKE_HOTEL_LIST: IHotelItem[] = [

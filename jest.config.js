@@ -32,6 +32,7 @@ module.exports = {
     '^\\$styles\\/(.*)$': '<rootDir>/src/styles/$1',
     '^\\$redux\\/(.*)$': '<rootDir>/src/redux/$1',
     '^\\$utils\\/(.*)$': '<rootDir>/src/utils/$1',
+    '^\\$types$': '<rootDir>/src/types',
   },
   modulePaths: ['src'],
   coveragePathIgnorePatterns: ['.*\\.d\\.ts', '<rootDir>/node_modules/']

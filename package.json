@@ -110,7 +110,7 @@
     "$config/*": "./config/*",
     "$styles/*": "src/styles/*",
     "$redux/*": "src/redux/*",
-    "$index": "index.d.ts",
+    "$types": "src/types",
     "$utils/*": "src/utils/*"
   }
 }

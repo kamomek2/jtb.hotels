@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { IHotelItem } from "$index";
+import { IHotelItem } from "$types";
 
 const style = require('./style.scss');
 

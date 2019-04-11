@@ -3,7 +3,7 @@ import * as ACTIONS from "$redux/hotel/actions";
 import { HOTEL_ACTIONS } from "$redux/hotel/constants";
 import storage from "redux-persist/lib/storage";
 import { PersistConfig } from "redux-persist/es/types";
-import { IHotelState } from '$index';
+import { IHotelState } from '$types';
 
 type UnsafeReturnType<T> = T extends (...args: any[]) => infer R ? R : any;
 interface ActionHandler<T> {

@@ -8,7 +8,7 @@ import { Persistor } from "redux-persist/es/types";
 import { routerMiddleware } from 'connected-react-router'
 
 import hotelReducer, { hotelPersistConfig } from '$redux/hotel/reducer';
-import { IHotelState } from '$index';
+import { IHotelState } from '$types';
 import hotelSaga from '$redux/hotel/sagas';
 
 import { searchReducer, searchSaga, searchPersistConfig, ISearchState } from 'jtb.search';
