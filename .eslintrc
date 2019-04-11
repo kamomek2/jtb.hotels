@@ -2,6 +2,7 @@
   "extends": "airbnb",
   "parser": "babel-eslint",
   "plugins": [
+    "jest",
     "react",
     "jsx-a11y",
     "import"
@@ -30,5 +31,8 @@
     "window": false,
     "HTMLInputElement": false,
     "HTMLDivElement": false
+  },
+  "env": {
+    "jest": true
   }
 }

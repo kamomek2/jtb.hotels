@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { IHotelState } from "index";
+import { IHotelState } from "$index";
 import { HotelListLoading } from "$components/HotelListLoading";
 import { HotelListItem } from "$components/HotelListItem";
 
@@ -10,7 +10,7 @@ export interface IHotelListProps extends IHotelState {
   query: string,
 }
 
-export const HotelList: React.FunctionComponent<IHotelListProps> = ({
+const HotelList: React.FunctionComponent<IHotelListProps> = ({
   query,
   is_loading,
   list,
@@ -27,7 +27,6 @@ export const HotelList: React.FunctionComponent<IHotelListProps> = ({
       {
         is_loading && <HotelListLoading />
       }
-
       {
         !is_loading && list && list.length > 0 &&
         <div className={style.list}>

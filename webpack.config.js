@@ -33,6 +33,7 @@ const resolve = {
     $styles: join(__dirname, 'src/styles'),
     $redux: join(__dirname, 'src/redux'),
     $utils: join(__dirname, 'src/utils'),
+    $index: join(__dirname, 'index.d.ts'),
   },
   extensions: ['*', '.ts', '.tsx', '.js', '.jsx', '.json']
 };

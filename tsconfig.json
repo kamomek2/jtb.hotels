@@ -12,6 +12,7 @@
     "baseUrl": "./",
     "paths": {
       "index.d.ts": ["index.d.ts"],
+      "$index": ["index.d.ts"],
       "$components/*": ["src/components/*"],
       "$containers/*": ["src/containers/*"],
       "$constants/*": ["src/constants/*"],
@@ -31,6 +32,7 @@
     "./custom.d.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "./__tests__/**/*"
   ]
 }

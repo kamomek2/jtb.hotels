@@ -5,7 +5,7 @@ const react_redux_1 = require("react-redux");
 const HotelListLoading_1 = require("../../components/HotelListLoading");
 const HotelListItem_1 = require("../../components/HotelListItem");
 const style = require('./style.scss');
-exports.HotelList = ({ query, is_loading, list, }) => (React.createElement("div", { className: style.wrapper },
+const HotelList = ({ query, is_loading, list, }) => (React.createElement("div", { className: style.wrapper },
     React.createElement("div", { className: style.container },
         React.createElement("div", { className: style.badge },
             "This part is rendered by ",
@@ -27,5 +27,5 @@ exports.HotelList = ({ query, is_loading, list, }) => (React.createElement("div"
         !is_loading && list && list.length > 0 &&
             React.createElement("div", { className: style.list }, list.map(({ title }) => (React.createElement(HotelListItem_1.HotelListItem, { title: title, key: title })))))));
 const mapStateToProps = ({ hotel, search: { query } }) => (Object.assign({}, hotel, { query }));
-exports.default = react_redux_1.connect(mapStateToProps)(exports.HotelList);
+exports.default = react_redux_1.connect(mapStateToProps)(HotelList);
 //# sourceMappingURL=index.js.map

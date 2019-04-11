@@ -8,7 +8,8 @@
     "copy-css": "copyfiles -u 1 \"./src/**/**/**/**/*.scss\" ./dist",
     "prepare": "npm run build",
     "start": "NODE_ENV=development webpack-dev-server --mode development --hot --open --inline --progress",
-    "profile": "webpack --json > stats.json"
+    "profile": "webpack --json > stats.json",
+    "test": "jest"
   },
   "author": "Fedor Katurov <gotham48@gmail.com>",
   "repository": {
@@ -16,6 +17,17 @@
     "url": "https://github.com/muerwre/jtb.hotels"
   },
   "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "enzyme-to-json": "^3.3.4",
+    "@types/enzyme": "^3.1.8",
+    "@types/jest": "^24.0.11",
+    "jest": "^22.4.4",
+    "jest-localstorage-mock": "^2.4.0",
+    "jest-mock-axios": "^2.1.11",
+    "eslint-plugin-jest": "^21.15.2",
+    "babel-jest": "^22.4.4",
+    "ts-jest": "^24.0.0",
     "@babel/cli": "^7.0.0-rc.1",
     "@babel/preset-env": "^7.0.0-rc.1",
     "awesome-typescript-loader": "^5.2.1",
@@ -61,7 +73,8 @@
     "@hot-loader/react-dom": "^16.8.1",
     "@types/classnames": "^2.2.7",
     "@types/node": "^11.9.0",
-    "@types/react": "16.8.1",
+    "@types/react": "16.8.8",
+    "@types/react-redux": "^7.0.3",
     "axios": "^0.18.0",
     "babel-runtime": "^6.26.0",
     "classnames": "^2.2.6",
@@ -97,6 +110,7 @@
     "$config/*": "./config/*",
     "$styles/*": "src/styles/*",
     "$redux/*": "src/redux/*",
+    "$index": "index.d.ts",
     "$utils/*": "src/utils/*"
   }
 }
