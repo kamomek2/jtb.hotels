@@ -9,7 +9,7 @@ import hotelReducer, { INITIAL_STATE } from '../dist/redux/hotel/reducer';
 
 describe('[Hotels]', () => {
   describe('[Mount] Checking components', () => {
-    it('[HotelList] is rendering with loader', () => {
+    it('[HotelList] is rendering loader', () => {
       const wrapper = shallow(<HotelList
         query="string"
         list={[
@@ -23,7 +23,7 @@ describe('[Hotels]', () => {
       expect(wrapper.find(HotelListItem).length).toBe(0);
     });
 
-    it('[HotelList] is rendering with list', () => {
+    it('[HotelList] is rendering list', () => {
       const wrapper = shallow(<HotelList
         query="string"
         list={[
