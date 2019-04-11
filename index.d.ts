@@ -13,3 +13,4 @@ declare type IHotelItem = Types.IHotelItem;
 declare type IHotelState = Types.IHotelState;
 
 declare module 'jtb.hotels' {}
+declare const HOTEL_INITIAL_STATE: IHotelState;
