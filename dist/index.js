@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var reducer_1 = require("./redux/hotel/reducer");
 exports.hotelReducer = reducer_1.default;
 exports.hotelPersistConfig = reducer_1.hotelPersistConfig;
+exports.HOTEL_INITIAL_STATE = reducer_1.INITIAL_STATE;
 var sagas_1 = require("./redux/hotel/sagas");
 exports.hotelSaga = sagas_1.default;
 var constants_1 = require("./redux/hotel/constants");

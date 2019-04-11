@@ -686,13 +686,6 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/react@16.8.1":
-  version "16.8.1"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.1.tgz#b431b104ecc6febda170b718caa9f50be66a6750"
-  dependencies:
-    "@types/prop-types" "*"
-    csstype "^2.2.0"
-
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.8.5.tgz#51b1c5fe6576a34953bf4b253df9f0d490d9e359"
@@ -5670,14 +5663,11 @@ jsx-ast-utils@^2.0.1:
   dependencies:
     array-includes "^3.0.3"
 
-jtb.flights@^1.0.0, jtb.flights@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/jtb.flights/-/jtb.flights-1.0.1.tgz#ef6bfe9dbf5a62d515a04d38e119ede7f7eebe24"
+jtb.flights@muerwre/jtb.flights:
+  version "1.0.2"
+  resolved "https://codeload.github.com/muerwre/jtb.flights/tar.gz/168f0417eb6a7b36d3da99421d5ba6db138b2226"
   dependencies:
     "@hot-loader/react-dom" "^16.8.1"
-    "@types/classnames" "^2.2.7"
-    "@types/node" "^11.9.0"
-    "@types/react" "16.8.1"
     axios "^0.18.0"
     babel-runtime "^6.26.0"
     classnames "^2.2.6"
@@ -5689,8 +5679,8 @@ jtb.flights@^1.0.0, jtb.flights@^1.0.1:
     less-middleware "~2.2.1"
     lodash "^4.17.10"
     node-sass "^4.11.0"
-    react "16.8.1"
-    react-dom "16.8.1"
+    react "16.8.6"
+    react-dom "16.8.6"
     react-hot-loader "^4.1.1"
     react-redux "^6.0.1"
     react-router "^4.3.1"
@@ -5705,14 +5695,11 @@ jtb.flights@^1.0.0, jtb.flights@^1.0.1:
     scrypt "^6.0.3"
     throttle-debounce "^2.1.0"
 
-jtb.hotels@^1.0.1:
+jtb.hotels@muerwre/jtb.hotels:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/jtb.hotels/-/jtb.hotels-1.0.1.tgz#2d3b1739f15dee4cce8e4eb4c67d5722a3d42c95"
+  resolved "https://codeload.github.com/muerwre/jtb.hotels/tar.gz/9aec4269ca82b0b6c95886f2455743832653d740"
   dependencies:
     "@hot-loader/react-dom" "^16.8.1"
-    "@types/classnames" "^2.2.7"
-    "@types/node" "^11.9.0"
-    "@types/react" "16.8.1"
     axios "^0.18.0"
     babel-runtime "^6.26.0"
     classnames "^2.2.6"
@@ -5724,8 +5711,8 @@ jtb.hotels@^1.0.1:
     less-middleware "~2.2.1"
     lodash "^4.17.10"
     node-sass "^4.11.0"
-    react "16.8.1"
-    react-dom "16.8.1"
+    react "16.8.6"
+    react-dom "16.8.6"
     react-hot-loader "^4.1.1"
     react-redux "^6.0.1"
     react-router "^4.3.1"
@@ -5740,14 +5727,11 @@ jtb.hotels@^1.0.1:
     scrypt "^6.0.3"
     throttle-debounce "^2.1.0"
 
-jtb.search@^1.0.0:
+jtb.search@muerwre/jtb.search:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/jtb.search/-/jtb.search-1.0.1.tgz#1cd90d7a41f008e9408f8f0da047ccfbe4097169"
+  resolved "https://codeload.github.com/muerwre/jtb.search/tar.gz/64a663685296c779205782a3fdf4eb972a19f7a3"
   dependencies:
     "@hot-loader/react-dom" "^16.8.1"
-    "@types/classnames" "^2.2.7"
-    "@types/node" "^11.9.0"
-    "@types/react" "16.8.1"
     axios "^0.18.0"
     babel-runtime "^6.26.0"
     classnames "^2.2.6"
@@ -5756,16 +5740,16 @@ jtb.search@^1.0.0:
     date-fns "^2.0.0-alpha.27"
     history "^4.7.2"
     http-errors "~1.6.2"
-    jtb.flights "^1.0.1"
-    jtb.hotels "^1.0.1"
+    jtb.flights muerwre/jtb.flights
+    jtb.hotels muerwre/jtb.hotels
     less "^3.8.1"
     less-middleware "~2.2.1"
     lodash "^4.17.10"
     module-alias "^2.2.0"
     module-resolver "^1.0.0"
     node-sass "^4.11.0"
-    react "16.8.1"
-    react-dom "16.8.1"
+    react "16.8.6"
+    react-dom "16.8.6"
     react-hot-loader "^4.1.1"
     react-redux "^6.0.1"
     react-router "^4.3.1"
@@ -7899,15 +7883,6 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dom@16.8.1:
-  version "16.8.1"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.1.tgz#ec860f98853d09d39bafd3a6f1e12389d283dbb4"
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.2"
-    scheduler "^0.13.1"
-
 react-dom@16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
@@ -7997,15 +7972,6 @@ react-test-renderer@^16.0.0-0:
     prop-types "^15.6.2"
     react-is "^16.8.6"
     scheduler "^0.13.6"
-
-react@16.8.1:
-  version "16.8.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.8.1.tgz#ae11831f6cb2a05d58603a976afc8a558e852c4a"
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.2"
-    scheduler "^0.13.1"
 
 react@16.8.6:
   version "16.8.6"
@@ -8523,7 +8489,7 @@ sax@^1.2.4, sax@~1.2.1, sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
-scheduler@^0.13.1, scheduler@^0.13.6:
+scheduler@^0.13.6:
   version "0.13.6"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.13.6.tgz#466a4ec332467b31a91b9bf74e5347072e4cd889"
   dependencies:
