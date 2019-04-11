@@ -4,12 +4,7 @@ module.exports = {
     '<rootDir>/test-shim.js',
     '<rootDir>/test-setup.js'
   ],
-  moduleFileExtensions: [
-    'ts',
-    'tsx',
-    'js',
-    'jsx'
-  ],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   transform: {
     '^.+\\.(ts|tsx)$': '<rootDir>/test-preprocessor.js',
     '^.+\\.(js|jsx)$': 'babel-jest'
@@ -23,15 +18,11 @@ module.exports = {
       tsConfig: 'tsconfig.json'
     },
   },
-  collectCoverage: true,
-  // moduleFileExtensions: ['js', 'jsx', 'tsx', 'json', 'node'],
+  collectCoverage: false,
   moduleNameMapper: {
     '^.+\\.s?css': 'identity-obj-proxy',
     // '^.+\\.(jpe?g|png|gif|svg)': '<rootDir>/__mocks__/fileMock.js',
     // '^.+\\.(eot|ttf|otf|woff|woff2)': 'identity-obj-proxy',
-    '^index.d.ts$': '<rootDir>/index.d.ts',
-    '^index$': '<rootDir>/index.d.ts',
-    '^\\/index$': '<rootDir>/index.d.ts',
     '^\\$components\\/(.*)$': '<rootDir>/src/components/$1',
     '^\\$containers\\/(.*)$': '<rootDir>/src/containers/$1',
     '^\\$constants\\/(.*)$': '<rootDir>/src/constants/$1',
